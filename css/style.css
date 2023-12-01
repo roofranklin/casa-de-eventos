@@ -21,10 +21,20 @@ ol > li {
     margin-left: 30px;
 }
 
+.container {
+  width: 1140px;
+  display: block;
+  margin: auto;
+}
+
 #cabecalho {
     width: 100%;
-    height: 80px;
+    height: 120px;
     background-color: #1B1B1B;
+}
+
+.logo {
+  height: 120px;
 }
 
 #titulo {
