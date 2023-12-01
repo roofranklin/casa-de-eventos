@@ -20,6 +20,14 @@ ol > li {
     margin-left: 30px;
 }
 
+button {
+  border: none;
+}
+
+a {
+  text-decoration: none;
+}
+
 .container {
   width: 1140px;
   display: block;
@@ -39,30 +47,73 @@ ol > li {
 h1 {
   font-family: 'Playfair Display', serif;
   padding-top: 58px;
-  padding-bottom: 18px;
   font-size: 36px;
   font-weight: 400;
   color:  #1F0049;
 }
 
-.listas {
-  color: orange;
+.slogan {
+  font-family: 'Playfair Display', serif;
+  font-size: 24px;
+  line-height: 2em; /* dobro da altura da fonte */
+  color: #6F9F9C;
 }
 
 h2 {
   font-family: 'Playfair Display', serif;
   font-size: 24px;
+  padding: 12px 0 12px 0;
   font-weight: 400;
-  color: green;
+  color: #6F9F9C;
 }
 
 .lista-eventos {
   display: flex;
+  flex-direction: row;
+  /*  PRATICANDO FLEXBOX */
+  /* flex-direction: row-reverse; */
+  /* flex-direction: column; */
+  /* flex-direction: column-reverse; */
+  gap: 10px;
+  padding: 20px 0 40px 0;
 }
 
-img {
-  width: 200px;
-  height: 160px;
+.lista-eventos li {
+  width: 360px;
+  min-height: 320px;
+  background-color: #FFFFFF;
+}
+
+.lista-eventos li:first-child {
+  background-color: gold;
+}
+
+.lista-eventos h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 18px;
+  padding: 15px 15px 0 15px;
+  font-weight: 300;
+  line-height: 150%; /* com porcentagem também funciona */
+}
+
+.lista-eventos img {
+  padding: 15px;
+  width: calc(100% - 30px); /* o calc serve para fazer calculos matemáticos de valores */
+}
+
+.lista-eventos button {
+  margin: 15px;
+  width: calc(100% - 30px);
+  height: 36px;
+  background-color: #1F0049;
+  color: white;
+  text-align: center;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.lista-eventos button:hover {
+  background-color: #6F9F9C;
 }
 
 
