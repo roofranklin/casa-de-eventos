@@ -125,7 +125,7 @@ h2 {
   padding-bottom: 80px;
 }
 
-.resultados {
+.resultados, .votacao {
   width: 50%;
   min-height: 200px;
   background-color: #FFFFFF;
@@ -134,7 +134,7 @@ h2 {
   box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.3);
 }
 
-.resultados h3 {
+.resultados h3, .votacao h3 {
   font-family: 'Playfair Display', serif;
   font-size: 21px;
   padding: 15px 15px 0 15px;
@@ -149,4 +149,30 @@ h2 {
 .resultados ol li {
   font-size: 16px;
   line-height: 200%;
+}
+
+.votacao form {
+  padding-top: 10px;
+}
+
+.votacao input {
+  margin-left: 30px;
+  font-size: 18px;
+  line-height: 150%;
+}
+
+.votacao input[type="text"] {
+  font-size: 12px;
+  margin-left: 10px;
+  width: 250px;
+}
+
+.btn-form {
+  width: calc(100% - 60px);
+  margin: 10px 0 10px 0;
+  height: 36px;
+  background-color: #1F0049;
+  color: #FFFFFF;
+  text-align: center;
+  border-radius: 18px;
 }

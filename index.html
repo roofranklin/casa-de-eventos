@@ -45,7 +45,7 @@
           </div>
           <div class="votacao">
             <h3>Vote aqui!</h3>
-            <form>
+            
               <!-- EXEMPLO DE CAMPOS DE DIGITAÇÃO -->
               <!-- <label for="nome">Nome: </label>  
               <input type="text" name="nome" value="" placeholder="Ex.: Jose dos Santos" />
@@ -75,20 +75,26 @@
               <label for="pagode">Pagode</label><br>
               <input type="checkbox" name="atracao_musical" value="rock" />
               <label for="rock">Banda de Rock</label> -->
-
-              <label for="atracao_musical">Atracao Musical: </label><br>
-              <input type="radio" name="atracao_musical" value="DJ" />
-              <label for="dj">DJ</label><br>
-              <input type="radio" name="atracao_musical" value="pagode" />
-              <label for="pagode">Pagode</label><br>
-              <input type="radio" name="atracao_musical" value="rock" />
-              <label for="rock">Banda de Rock</label>
-              <br>
-
-              <input type="submit" value="Votar" />
-
-
-
+              
+            <form action="#" method="get">
+              <div class="formbox">
+                <input type="radio" name="atracao_musical" value="DJ" /> 
+                <label for="dj">DJ</label>
+              </div>
+              <div class="formbox">
+                <input type="radio" name="atracao_musical" value="pagode" />
+                <label for="pagode">Pagode</label>
+              </div>
+              <div class="formbox">
+                <input type="radio" name="atracao_musical" value="rock" />
+                <label for="rock">Banda de Rock</label>
+              </div>
+              <div class="formbox">
+                <input type="radio" name="atracao_musical" value="outro" />
+                <label for="outro">Outro. Qual?</label>
+                <input type="text" name="outra_atração" placeholder="Digite qual atração musical você quer" />
+              </div>
+              <input type="submit" class="btn-form" value="Votar" />
             </form>
           </div>
         </div>       
