@@ -44,6 +44,10 @@ a {
   height: 120px;
 }
 
+#conteudo {
+  min-height: calc(100vh - 240px);
+}
+
 h1 {
   font-family: 'Playfair Display', serif;
   padding-top: 58px;
@@ -102,11 +106,14 @@ h2 {
 .lista-eventos img {
   padding: 15px;
   width: calc(100% - 30px); /* o calc serve para fazer calculos matemáticos de valores */
+  aspect-ratio: 16/9;
 }
 
-.lista-eventos button {
+.lista-eventos a {
+  display: block;
   margin: 15px;
   width: calc(100% - 30px);
+  line-height: 36px;
   height: 36px;
   background-color: #1F0049;
   color: white;
@@ -175,4 +182,13 @@ h2 {
   color: #FFFFFF;
   text-align: center;
   border-radius: 18px;
+}
+
+#rodape {
+  width: 100%;
+  padding-top: 45px;
+  height: 75px;
+  background-color: #1F0049;
+  color: #ffffff;
+  font-size: 1.25em;
 }
