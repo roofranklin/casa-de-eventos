@@ -1,17 +1,17 @@
 <html>
-    <head>
-        <link rel="stylesheet" href="css/homepage.css" />
-        <title>Casa de festas Mamma Mia</title>
-    </head>
+  <head>
+      <link rel="stylesheet" href="css/homepage.css" />
+      <title>Casa de festas Mamma Mia</title>
+  </head>
   <body>
-    <div id="cabecalho">
+    <header>
       <div class="container">
         <div class="logo-content">
           <a href="index.html">
             <img class="logo" src="img/logo.svg" alt="Logomarca da casa de festas mamma mia" />
           </a>
         </div>
-        <div class="menu-content">
+        <nav>
           <ul class="menu">
             <li>
               <a href="index.html">Homepage</a>
@@ -26,105 +26,78 @@
               <a href="contato.html">Contato</a>
             </li>
           </ul>
-        </div>
+        </nav>
       </div>
-    </div>
-    <div id="conteudo">
+    </header>
+    <main>
       <div class="container">
         <h1>Bem vindx a Casa de Festas Mamma Mia</h1>
         <p class="slogan">Essa é a casa de festas que realiza sonhos.</p>
-        <h2 class="secao-eventos">Próximos eventos:</h2>
-        <ul class="lista-eventos">
-          <li>
-            <h3>17/12 - Formatura Colegio D. Pedro</h3>
-            <img src="img/formatura.jpeg" alt="Foto de grupo de alunas celebrando a formatura" />
-            <br>
-            <a href="formatura.html">Clique para detalhes</a>
-          </li>
-          <li>
-            <h3>24/12 - Festa de Natal Beneficente</h3>
-            <img src="img/natal.jpeg" alt="Foto de celebração de Natal" />
-            <br>
-            <a href="#">Clique para detalhes</a>
-          </li>
-          <li>
-            <h3>31/12 - Reveillon da Mamma</h3>
-            <img src="img/reveillon.webp" alt="Foto do evento de reveillon" /> 
-            <br>
-            <a href="#">Clique para detalhes</a>
-          </li>
-        </ul>
-        <h2 class="secao-enquete">Votação para atração musical do Reveillon:</h2>
-        <div class="enquete">
-          <div class="resultados">
-            <h3>Resultados Parciais</h3>
-            <ol>
-              <li>DJ (48%)</li>
-              <li>Grupo de Pagode (20%)</li>
-              <li>Banda de Rock (16%)</li>
-            </ol>
-          </div>
-          <div class="votacao">
-            <h3>Vote aqui!</h3>
-            
-              <!-- EXEMPLO DE CAMPOS DE DIGITAÇÃO -->
-              <!-- <label for="nome">Nome: </label>  
-              <input type="text" name="nome" value="" placeholder="Ex.: Jose dos Santos" />
+        <section id="eventos">
+          <h2>Próximos eventos:</h2>
+          <ul>
+            <li>
+              <h3>17/12 - Formatura Colegio D. Pedro</h3>
+              <img src="img/formatura.jpeg" alt="Foto de grupo de alunas celebrando a formatura" />
               <br>
-              <label for="email">E-mail: </label>
-              <input type="email" name="email" value="" placeholder="teste@teste.com" />
+              <a href="formatura.html">Clique para detalhes</a>
+            </li>
+            <li>
+              <h3>24/12 - Festa de Natal Beneficente</h3>
+              <img src="img/natal.jpeg" alt="Foto de celebração de Natal" />
               <br>
-              <label for="senha">Senha: </label>
-              <input type="password" name="senha" />
+              <a href="#">Clique para detalhes</a>
+            </li>
+            <li>
+              <h3>31/12 - Reveillon da Mamma</h3>
+              <img src="img/reveillon.webp" alt="Foto do evento de reveillon" /> 
               <br>
-              <label for="mensagem">Mensagem: </label><br>
-              <textarea name="mensagem" rows="10"></textarea>
-              <br> -->
-
-              <!-- EXEMPLO DE CAMPOS DE SELEÇÃO -->
-              <!-- <label for="atracao_musical">Atração musical: </label>
-              <select name="atracao_musical">
-                <option value="dj">DJ</option>
-                <option value="pagode">Grupo de Pagode</option>
-                <option value="rock">Banda de Rock</option>
-              </select> -->
-
-              <!-- <label for="atracao_musical">Atracao Musical: </label><br>
-              <input type="checkbox" name="atracao_musical" value="DJ" />
-              <label for="dj">DJ</label><br>
-              <input type="checkbox" name="atracao_musical" value="pagode" />
-              <label for="pagode">Pagode</label><br>
-              <input type="checkbox" name="atracao_musical" value="rock" />
-              <label for="rock">Banda de Rock</label> -->
-              
-            <form action="#" method="get">
-              <div class="formbox">
-                <input type="radio" name="atracao_musical" value="DJ" /> 
-                <label for="dj">DJ</label>
-              </div>
-              <div class="formbox">
-                <input type="radio" name="atracao_musical" value="pagode" />
-                <label for="pagode">Pagode</label>
-              </div>
-              <div class="formbox">
-                <input type="radio" name="atracao_musical" value="rock" />
-                <label for="rock">Banda de Rock</label>
-              </div>
-              <div class="formbox">
-                <input type="radio" name="atracao_musical" value="outro" />
-                <label for="outro">Outro. Qual?</label>
-                <input type="text" name="outra_atração" placeholder="Digite qual atração musical você quer" />
-              </div>
-              <input type="submit" class="btn-form" value="Votar" />
-            </form>
-          </div>
-        </div>   
+              <a href="#">Clique para detalhes</a>
+            </li>
+          </ul>
+        </section>
+        <section id="pesquisa">
+          <h2>Votação para atração musical do Reveillon:</h2>
+          <div class="enquete">
+            <div class="resultados">
+              <h3>Resultados Parciais</h3>
+              <ol>
+                <li>DJ (48%)</li>
+                <li>Grupo de Pagode (20%)</li>
+                <li>Banda de Rock (16%)</li>
+              </ol>
+            </div>
+            <div class="votacao">
+              <h3>Vote aqui!</h3>  
+              <form action="#" method="get">
+                <div class="formbox">
+                  <input type="radio" name="atracao_musical" value="DJ" /> 
+                  <label for="dj">DJ</label>
+                </div>
+                <div class="formbox">
+                  <input type="radio" name="atracao_musical" value="pagode" />
+                  <label for="pagode">Pagode</label>
+                </div>
+                <div class="formbox">
+                  <input type="radio" name="atracao_musical" value="rock" />
+                  <label for="rock">Banda de Rock</label>
+                </div>
+                <div class="formbox">
+                  <input type="radio" name="atracao_musical" value="outro" />
+                  <label for="outro">Outro. Qual?</label>
+                  <input type="text" name="outra_atração" placeholder="Digite qual atração musical você quer" />
+                </div>
+                <input type="submit" class="btn-form" value="Votar" />
+              </form>
+            </div>
+          </div> 
+        </section>   
       </div>
-    </div>
-    <div id="rodape">
+    </main>
+    <footer>
       <div class="container">
         <p>&copy; 2023 | Site desenvolvido por Roosevelt Franklin</p>
       </div>
-    </div>
+    </footer>
   </body>
 </html>
