@@ -40,8 +40,34 @@ a {
     background-color: #1F0049;
 }
 
+#cabecalho .container {
+  display: flex;
+}
+
+.logo-content {
+  width: 33.33%;
+}
+
 .logo {
   height: 120px;
+}
+
+.menu-content {
+  width: 66.67%;
+}
+
+.menu {
+  display: flex;
+  padding-top: 50px;
+  justify-content: end;
+}
+
+.menu li a{
+  color: #E2D8A5;
+}
+
+.menu li a:hover {
+  color: #6F9F9C;
 }
 
 #conteudo {
