@@ -105,3 +105,13 @@ a:hover {
     background-color: transparent;
     color: #6F9F9C !important;
 }
+
+form button {
+    display: block;
+    width: 100%;
+    background-color: #1F0049;
+    color: #ffffff;
+    height: 36px;
+    line-height: 36px;
+    border: none;
+}
