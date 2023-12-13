@@ -29,13 +29,13 @@ a {
 }
 
 .container {
-  width: 1140px;
+  width: 100vw;
   display: block;
   margin: auto;
 }
 
 header {
-    width: 100%;
+    width: 100vw;
     height: 120px;
     background-color: #1F0049;
 }
@@ -200,10 +200,62 @@ h1 {
 }
 
 footer {
-  width: 100%;
+  width: 100vw;
   padding-top: 45px;
   height: 75px;
   background-color: #1F0049;
   color: #ffffff;
   font-size: 1.25em;
+}
+
+.somente-mobile { display: none; }
+
+@media screen and (max-width: 480px) {
+  .somente-desktop { display: none !important; }
+  .somente-mobile { display: block; }
+  .container { 
+    max-width: 480px !important;
+    font-size: 12px;
+   }
+
+  #eventos ul {
+    display: block;
+    padding-top: 0px;
+  }
+  #eventos ul li {
+    width: calc(100% - 60px);
+    margin-bottom: 20px;
+  }
+  .enquete {
+    display: block !important;
+  }
+  .resultados,  .votacao {
+    margin-left: 30px;
+    width: calc(100% - 60px);
+    margin-bottom: 20px;
+  }
+
+  main h1, main .slogan {
+    text-align: center;
+  }
+
+  .slogan {
+    font-size: 1.25em;
+    padding-top: 0;
+  }
+
+  #eventos h2, #pesquisa h2 {
+    padding-left: 30px;
+    color: #1F0049;
+  }
+
+  .votacao input[type="text"] {
+    margin-left: 30px;
+    margin-top: 10px;
+  }
+
+  footer p {
+    text-align: center;
+    font-size: 0.75em;
+  }
 }

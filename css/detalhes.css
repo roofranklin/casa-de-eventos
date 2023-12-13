@@ -7,7 +7,7 @@ body {
 }
 
 #cabecalho {
-    width: 100%;
+    width: 100vw;
     height: 120px;
     background-color: #1F0049;
 }
@@ -75,7 +75,7 @@ a:hover {
 }
 
 #rodape {
-    width: 100%;
+    width: 100vw;
     padding-top: 45px;
     height: 120px;
     background-color: #1F0049;
@@ -84,6 +84,7 @@ a:hover {
 }
 
 .menu {
+    display: flex;
     padding-top: 10px;
     float: right;
 }
@@ -115,3 +116,44 @@ form button {
     line-height: 36px;
     border: none;
 }
+
+.somente-mobile { display: none !important; }
+.somente-desktop { display: flex; }
+
+@media screen and (max-width: 480px) {
+  .somente-desktop { display: none !important; }
+  .somente-mobile { display: block; }
+  .container { 
+    max-width: 480px !important;
+    font-size: 12px;
+   }
+
+  main h1, main {
+    text-align: center;
+  }
+
+  footer p {
+    text-align: center;
+    font-size: 0.75em;
+  }
+}
+
+@media screen and (max-width: 980px) {
+    .somente-desktop { display: none !important; }
+    .somente-mobile { display: block; }
+    .container { 
+      max-width: 480px !important;
+      font-size: 12px;
+     }
+  
+    main h1, main {
+      text-align: center;
+    }
+  
+    footer p {
+      text-align: center;
+      font-size: 0.75em;
+    }
+  }
+  
+   
