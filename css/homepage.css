@@ -29,13 +29,13 @@ a {
 }
 
 .container {
-  width: 1140px;
+  width: 100vw;
   display: block;
   margin: auto;
 }
 
 header {
-    width: 100%;
+    width: 100vw;
     height: 120px;
     background-color: #1F0049;
 }
@@ -106,7 +106,7 @@ h1 {
 }
 
 #eventos ul li {
-  width: 360px;
+  width: 80vw;
   min-height: 320px;
   background-color: #FFFFFF;
   -webkit-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.3);
@@ -213,10 +213,10 @@ footer {
 @media screen and (max-width: 480px) {
   .somente-desktop { display: none !important; }
   .somente-mobile { display: block; }
-  .container { width: 100vw; }
-  body {
-    width:100%;
-  }
+  .container { 
+    max-width: 480px !important;
+    font-size: 12px;
+   }
 
   #eventos ul {
     display: block;
@@ -233,10 +233,6 @@ footer {
     margin-left: 30px;
     width: calc(100% - 60px);
     margin-bottom: 20px;
-  }
-
-  main {
-    max-width: 100%;
   }
 
   main h1, main .slogan {
