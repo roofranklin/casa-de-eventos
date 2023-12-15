@@ -211,7 +211,7 @@ footer {
   font-size: 1.25em;
 }
 
-.somente-mobile { display: none; }
+.only-mobile { display: none; }
 
 /* MENU */
 .navbar-nav {
